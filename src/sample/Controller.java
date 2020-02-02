@@ -24,6 +24,10 @@ public class Controller implements Initializable
     @FXML
     private CheckBox isActiveCheckBox;
 
+
+
+    //test
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
