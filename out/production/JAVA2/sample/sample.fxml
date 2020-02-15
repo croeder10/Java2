@@ -7,20 +7,30 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.CheckBox?>
+<?import com.jfoenix.controls.JFXButton?>
 
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXSnackbar?>
 <HBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center">
     <VBox>
         <HBox>
-            <ListView fx:id="employeeListView"/>
+            <JFXListView fx:id="employeeListView"/>
         </HBox>
         <HBox>
-            <Button text="Delete Selected" fx:id="btnDeleteSelected" />
+            <JFXButton text="Delete Selected" fx:id="btnDeleteSelected" />
+            <JFXSnackbar />
         </HBox>
     </VBox>
     <VBox>
         <HBox>
             <Label text="First Name" prefWidth="100"/>
-            <TextField prefWidth="150" fx:id="firstNameTextField"/>
+            <JFXTextField prefWidth="150" fx:id="firstNameTextField"/>
         </HBox>
         <HBox>
             <Label text="Last Name" prefWidth="100"    />
@@ -28,15 +38,17 @@
         </HBox>
         <HBox>
             <Label text="Is Active" prefWidth="100"    />
-            <CheckBox fx:id="isActiveCheckBox"/>
+            <JFXCheckBox fx:id="isActiveCheckBox"/>
         </HBox>
         <HBox>
             <Label text="Misc." prefWidth="100"    />
             <TextField prefWidth="150" fx:id="MiscField"/>
         </HBox>
         <HBox>
-            <Button text="Clear" fx:id="btnClear" />
-            <Button text="Add New" fx:id="btnAddNew" />
+            <JFXButton text="Clear" fx:id="btnClear" />
+            <JFXButton text="Add New" fx:id="btnAddNew" />
         </HBox>
+
+
     </VBox>
 </HBox>
