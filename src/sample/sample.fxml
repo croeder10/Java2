@@ -46,6 +46,11 @@
             <JFXButton text="Clear" fx:id="btnClear" />
             <JFXButton text="Add New" fx:id="btnAddNew" />
         </HBox>
+        <HBox>
+            <JFXButton text="CREATE DB BUTTON" prefWidth="150" fx:id="createdbbutton"/>
+            <JFXButton text="DELETE BUTTON" prefWidth="150" fx:id="deletetablebutton"/>
+            <JFXButton text="LOAD BUTTON" prefWidth="150" fx:id="loaddatabutton"/>
+        </HBox>
 
 
     </VBox>

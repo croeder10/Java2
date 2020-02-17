@@ -8,8 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.CheckBox?>
 <?import com.jfoenix.controls.JFXButton?>
-
-
 <?import com.jfoenix.controls.JFXListView?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXCheckBox?>
@@ -17,6 +15,7 @@
 <?import com.jfoenix.controls.JFXBadge?>
 <?import com.jfoenix.controls.JFXColorPicker?>
 <?import com.jfoenix.controls.JFXSnackbar?>
+
 <HBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center">
     <VBox>
         <HBox>
@@ -24,7 +23,6 @@
         </HBox>
         <HBox>
             <JFXButton text="Delete Selected" fx:id="btnDeleteSelected" />
-            <JFXSnackbar />
         </HBox>
     </VBox>
     <VBox>
@@ -47,6 +45,11 @@
         <HBox>
             <JFXButton text="Clear" fx:id="btnClear" />
             <JFXButton text="Add New" fx:id="btnAddNew" />
+        </HBox>
+        <HBox>
+            <JFXButton text="CREATE DB BUTTON" prefWidth="150" fx:id="createdbbutton"/>
+            <JFXButton text="DELETE BUTTON" prefWidth="150" fx:id="deletetablebutton"/>
+            <JFXButton text="LOAD BUTTON" prefWidth="150" fx:id="loaddatabutton"/>
         </HBox>
 
 
